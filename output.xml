@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.9.6 on darwin)" generated="2025-07-25T17:20:17.325369" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="/Users/natthawutjantakul/Documents/project_nate/automate_test/test.robot">
+<kw name="Open Browser To Data Portal" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:17.406781" level="INFO">Opening browser 'Chrome' to base url 'https://dataportal.m-society.go.th/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-25T17:20:17.406669" elapsed="3.665464"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-25T17:20:21.073221" elapsed="0.340560"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="app"]/div/div/header/div/button[2]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-25T17:20:21.413897" elapsed="0.009589"/>
+</kw>
+<status status="PASS" start="2025-07-25T17:20:17.406377" elapsed="4.017210"/>
+</kw>
+<test id="s1-t1" name="เข้าสู่ระบบสำเร็จ" line="19">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:21.424252" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/header/div/button[2]'.</msg>
+<arg>xpath=//*[@id="app"]/div/div/header/div/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-25T17:20:21.424119" elapsed="0.187996"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/login/local</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-07-25T17:20:21.612322" elapsed="0.001910"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:21.614467" level="INFO">Typing text 'useradmintest1' into text field 'xpath=//*[@id="input-v-4"]'.</msg>
+<arg>xpath=//*[@id="input-v-4"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-25T17:20:21.614332" elapsed="0.057362"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:21.672038" level="INFO">Typing text 'zjkoC]6p' into text field 'xpath=//*[@id="input-v-6"]'.</msg>
+<arg>xpath=//*[@id="input-v-6"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-25T17:20:21.671870" elapsed="0.025545"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:21.697701" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/div/main/div/div/div/div[2]/div/div/div[2]/div[4]/button'.</msg>
+<arg>xpath=//*[@id="app"]/div/div/div/main/div/div/div/div[2]/div/div/div[2]/div[4]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-25T17:20:21.697566" elapsed="0.021293"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>https://dataportal.m-society.go.th/home</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-07-25T17:20:21.719065" elapsed="0.418424"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:22.139734" level="INFO">Current location is 'https://dataportal.m-society.go.th/home'.</msg>
+<arg>https://dataportal.m-society.go.th/home</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-07-25T17:20:22.137868" elapsed="0.001918"/>
+</kw>
+<status status="PASS" start="2025-07-25T17:20:21.423657" elapsed="0.716283"/>
+</test>
+<test id="s1-t2" name="ตรวจสอบแสดง Metadata หลังเข้าสู่ระบบ" line="28">
+<kw name="Open Browser To Data Portal">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:22.149948" level="INFO">Opening browser 'Chrome' to base url 'https://dataportal.m-society.go.th/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-25T17:20:22.149765" elapsed="3.041626"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-25T17:20:25.192070" elapsed="0.343740"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="app"]/div/div/header/div/button[2]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-25T17:20:25.535939" elapsed="0.007914"/>
+</kw>
+<status status="PASS" start="2025-07-25T17:20:22.140772" elapsed="3.403189"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:25.544282" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/header/div/button[2]'.</msg>
+<arg>xpath=//*[@id="app"]/div/div/header/div/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-25T17:20:25.544117" elapsed="0.317783"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/login/local</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-07-25T17:20:25.862155" elapsed="0.002951"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:25.865527" level="INFO">Typing text 'useradmintest1' into text field 'xpath=//*[@id="input-v-4"]'.</msg>
+<arg>xpath=//*[@id="input-v-4"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-25T17:20:25.865272" elapsed="0.077456"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:25.943208" level="INFO">Typing text 'zjkoC]6p' into text field 'xpath=//*[@id="input-v-6"]'.</msg>
+<arg>xpath=//*[@id="input-v-6"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-25T17:20:25.942955" elapsed="0.028401"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:25.971789" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div/div/main/div/div/div/div[2]/div/div/div[2]/div[4]/button'.</msg>
+<arg>xpath=//*[@id="app"]/div/div/div/main/div/div/div/div[2]/div/div/div[2]/div[4]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-25T17:20:25.971613" elapsed="0.022540"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>https://dataportal.m-society.go.th/home</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-07-25T17:20:25.994373" elapsed="0.231817"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:26.227810" level="INFO">Current location is 'https://dataportal.m-society.go.th/home'.</msg>
+<arg>https://dataportal.m-society.go.th/home</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-07-25T17:20:26.226420" elapsed="0.001451"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, "text-caption") and contains(text(), "Metadata")]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-25T17:20:26.228001" elapsed="0.635423"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:26.881285" level="INFO">Element 'xpath=//div[contains(@class, "text-caption") and contains(text(), "Metadata")]' contains text 'Metadata'.</msg>
+<arg>xpath=//div[contains(@class, "text-caption") and contains(text(), "Metadata")]</arg>
+<arg>Metadata</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-07-25T17:20:26.863819" elapsed="0.017635"/>
+</kw>
+<tag>Metadata</tag>
+<status status="PASS" start="2025-07-25T17:20:22.140136" elapsed="4.741662"/>
+</test>
+<test id="s1-t3" name="ออกจากระบบสำเร็จ" line="43">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="app"]/div/div/header/div/button[9]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-25T17:20:26.882735" elapsed="0.012526"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:26.895857" level="INFO">Executing JavaScript:
+document.evaluate('//*[@id="app"]/div/div/header/div/button[9]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
+Without any arguments.</msg>
+<arg>document.evaluate('//*[@id="app"]/div/div/header/div/button[9]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-07-25T17:20:26.895514" elapsed="0.008513"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, "v-overlay__scrim")]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" start="2025-07-25T17:20:26.904236" elapsed="3.393956"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[contains(@class, "v-list-item-title") and contains(., "Logout")]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-25T17:20:30.298660" elapsed="0.013972"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:30.313392" level="INFO">Executing JavaScript:
+document.evaluate('//div[contains(@class, "v-list-item-title") and contains(., "Logout")]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
+Without any arguments.</msg>
+<arg>document.evaluate('//div[contains(@class, "v-list-item-title") and contains(., "Logout")]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-07-25T17:20:30.312950" elapsed="0.018926"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//span[text()="Confirm"]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-25T17:20:30.332111" elapsed="0.221556"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:30.554043" level="INFO">Clicking element 'xpath=//span[text()="Confirm"]'.</msg>
+<arg>xpath=//span[text()="Confirm"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-25T17:20:30.553875" elapsed="0.028266"/>
+</kw>
+<kw name="Wait Until Location Is" owner="SeleniumLibrary">
+<arg>https://dataportal.m-society.go.th/</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" start="2025-07-25T17:20:30.582362" elapsed="0.827926"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:31.414149" level="INFO">Current location is 'https://dataportal.m-society.go.th/'.</msg>
+<arg>https://dataportal.m-society.go.th/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-07-25T17:20:31.410784" elapsed="0.003499"/>
+</kw>
+<status status="PASS" start="2025-07-25T17:20:26.882016" elapsed="4.532570"/>
+</test>
+<test id="s1-t4" name="เข้าหน้า Home โดยไม่ล็อกอิน" line="66">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:31.415930" level="INFO">Opening browser 'Chrome' to base url 'https://dataportal.m-society.go.th/home'.</msg>
+<arg>https://dataportal.m-society.go.th/home</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-25T17:20:31.415676" elapsed="0.754950"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-25T17:20:32.172000" elapsed="3.480399"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>/login/local</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-07-25T17:20:35.652599" elapsed="0.002114"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-07-25T17:20:35.655962" level="INFO">Current location is 'https://dataportal.m-society.go.th/login/local'.</msg>
+<arg>https://dataportal.m-society.go.th/login/local</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-07-25T17:20:35.654816" elapsed="0.001178"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-25T17:20:35.656068" elapsed="0.069742"/>
+</kw>
+<tag>Auth</tag>
+<tag>Redirect</tag>
+<status status="PASS" start="2025-07-25T17:20:31.414852" elapsed="4.311120"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-25T17:20:35.726344" elapsed="0.000109"/>
+</kw>
+<status status="PASS" start="2025-07-25T17:20:17.325883" elapsed="18.400594"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Auth</stat>
+<stat pass="1" fail="0" skip="0">Metadata</stat>
+<stat pass="1" fail="0" skip="0">Redirect</stat>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="4" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
